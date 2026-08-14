@@ -1,0 +1,246 @@
+/* Turbo Pascal 7.0 blue-screen skin — global stylesheet.
+   All rules are :global because this is a skin: it must restyle product
+   chrome by element/attribute selectors, not by hashed class names. The CSS
+   Modules pipeline still injects the sheet into the page (one <style
+   data-plugin-css> tag per module file, idempotent under re-evaluation), and
+   unloading the plugin removes the tag with the fiber. */
+
+:global(*) {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', 'Helvetica Neue', Arial, sans-serif !important;
+  border-radius: 0 !important;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+:global(code),
+:global(pre),
+:global(kbd),
+:global(samp) {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, 'Courier New', monospace !important;
+}
+
+/* DOS 3D raised buttons */
+:global(button) {
+  box-shadow: inset -1px -1px 0 #404040, inset 1px 1px 0 #FFFFFF, inset -2px -2px 0 #808080, inset 2px 2px 0 #E8E8E8 !important;
+  background-color: #C0C0C0 !important;
+  color: #000000 !important;
+}
+
+:global(button:active) {
+  box-shadow: inset 1px 1px 0 #404040, inset -1px -1px 0 #FFFFFF !important;
+}
+
+:global(button:disabled) {
+  color: #808080 !important;
+}
+
+/* Recessed inputs + block caret */
+:global(input),
+:global(textarea),
+:global(select) {
+  box-shadow: inset 1px 1px 0 #404040, inset -1px -1px 0 #FFFFFF !important;
+  background-color: #000000 !important;
+  color: #C0C0C0 !important;
+  caret-shape: block;
+  caret-color: #55FF55;
+}
+
+/* Square scrollbars */
+:global(::-webkit-scrollbar) {
+  width: 14px;
+  height: 14px;
+}
+
+:global(::-webkit-scrollbar-track) {
+  background: #000080;
+}
+
+:global(::-webkit-scrollbar-thumb) {
+  background: #C0C0C0;
+  border: 2px solid #000080;
+}
+
+:global(::-webkit-scrollbar-thumb:hover) {
+  background: #FFFFFF;
+}
+
+:global(::-webkit-scrollbar-corner) {
+  background: #000080;
+}
+
+/* Inverse-video selection */
+:global(::selection) {
+  background: #C0C0C0;
+  color: #000000;
+}
+
+/* TP-style yellow focus ring */
+:global(:focus-visible) {
+  outline: 2px solid #FFFF55 !important;
+}
+
+/* ============ TP7.0 menu bar: striped header ============ */
+:global([data-slot='conversation.session.header'] > header) {
+  background-color: #0000AA !important;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #0000AA 0px,
+    #0000AA 6px,
+    #2424C4 6px,
+    #2424C4 12px
+  ) !important;
+  border-bottom: 2px solid #808080 !important;
+  padding-bottom: 0 !important;
+}
+
+:global([data-slot='conversation.session.header'] > header::after) {
+  display: none !important;
+}
+
+/* Breadcrumbs: transparent, light text (undo the global gray button style) */
+:global([data-slot='conversation.session.header'] nav button) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  padding: 4px 8px !important;
+  color: #D8D8FF !important;
+}
+
+:global([data-slot='conversation.session.header'] nav button:hover:not(:disabled)) {
+  background: #000080 !important;
+}
+
+:global([data-slot='conversation.session.header'] nav button:disabled) {
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='conversation.session.header'] nav span) {
+  color: #9090E0 !important;
+}
+
+/* View tabs (chat / trajectory): TP7.0 menu-style highlight */
+:global([data-slot='conversation.session.header'] [role='tablist']) {
+  gap: 4px !important;
+  margin-top: 0 !important;
+  padding-left: 8px !important;
+}
+
+:global([data-slot='conversation.session.header'] [role='tab']) {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 14px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+}
+
+:global([data-slot='conversation.session.header'] [role='tab']:hover:not([aria-selected='true'])) {
+  background: #000080 !important;
+}
+
+/* TP7.0 menu activation: inverse highlight (white bg, deep-blue text) */
+:global([data-slot='conversation.session.header'] [role='tab'][aria-selected='true']) {
+  background: #FFFFFF !important;
+  color: #0000AA !important;
+  box-shadow: none !important;
+}
+
+:global([data-slot='conversation.session.header'] [role='tab']:active) {
+  box-shadow: none !important;
+}
+
+:global([data-slot='conversation.session.header'] [role='tab']::after) {
+  display: none !important;
+}
+
+/* ============ Sidebar: brand wordmark and collapse toggle back to menu style ============ */
+:global([data-slot='sidebar'] button:has(svg[viewBox='0 0 182 24'])) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='sidebar'] button:has(svg[viewBox='0 0 182 24']):hover) {
+  background: #000080 !important;
+}
+
+:global([data-slot='sidebar'] button:has(svg[viewBox='0 0 23.16 17.04'])) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='sidebar'] button:has(svg[viewBox='0 0 23.16 17.04']):hover) {
+  background: #000080 !important;
+}
+
+/* ============ Sidebar workspace header: secondary icon buttons ============ */
+:global([data-slot='sidebar.workspaces'] > div > div:first-child button) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  border-radius: 0 !important;
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='sidebar.workspaces'] > div > div:first-child button:hover) {
+  background: #000080 !important;
+}
+
+:global([data-slot='sidebar.workspaces'] > div > div:first-child button:active) {
+  box-shadow: none !important;
+}
+
+/* ============ Settings: plugin-config card headers readable ============ */
+:global([data-slot='settings.plugin.item'] li) {
+  background: #000080 !important;
+  border-color: #808080 !important;
+}
+
+:global([data-slot='settings.plugin.item'] li > button:first-child) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='settings.plugin.item'] li > button:first-child:hover) {
+  background: #0000AA !important;
+}
+
+:global([data-slot='settings.plugin.item'] li > button:first-child span) {
+  color: #FFFFFF !important;
+}
+
+/* ============ TP7.0 status bar (own component, plain class names) ============ */
+:global(.tp7-statusbar) {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #C0C0C0;
+  color: #000000;
+  border-top: 2px solid #FFFFFF;
+  border-left: 1px solid #FFFFFF;
+  border-right: 2px solid #404040;
+  border-bottom: 2px solid #808080;
+  padding: 1px 10px;
+  font-size: 13px;
+  line-height: 1.6;
+  user-select: none;
+}
+
+:global(.tp7-statusbar .tp7-sb-item) {
+  padding: 0 4px;
+}
+
+:global(.tp7-statusbar .tp7-sb-sep) {
+  color: #000080;
+  padding: 0 6px;
+}
