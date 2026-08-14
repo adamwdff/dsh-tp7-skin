@@ -339,6 +339,11 @@ return {
       [data-slot='settings.section'] li:has(> button[aria-pressed='true']) code {
         color: #0000AA !important;
       }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) button:hover {
+        background: #FFFFFF !important;
+        box-shadow: none !important;
+        color: #0000AA !important;
+      }
 
       /* ============ Settings dialogs: white TP frame on deep blue ============ */
       [role='dialog'] {

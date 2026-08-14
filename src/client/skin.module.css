@@ -392,6 +392,16 @@
   color: #0000AA !important;
 }
 
+/* The default (in-use) preset is already the selected inverse card; hovering
+   it must not apply the generic deep-blue hover fill, which would turn the
+   white card into deep-blue-on-deep-blue and hide the text. Keep its white
+   fill on hover. */
+:global([data-slot='settings.section'] li:has(> button[aria-pressed='true']) button:hover) {
+  background: #FFFFFF !important;
+  box-shadow: none !important;
+  color: #0000AA !important;
+}
+
 /* ============ Settings dialogs: white TP frame on deep blue ============ */
 /* The Settings modal panel (role=dialog) would otherwise blend into the
    deep-blue desktop; frame it with the classic TP7.0 white rectangle border
