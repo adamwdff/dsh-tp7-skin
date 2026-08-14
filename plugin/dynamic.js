@@ -255,6 +255,34 @@ return {
         color: #C0C0C0 !important;
       }
 
+      /* ============ Settings Appearance row: theme preference cubes ============ */
+      [data-slot='settings.general.item'] [aria-pressed] {
+        box-shadow: none !important;
+        background: transparent !important;
+        border: 1px solid #808080 !important;
+        border-radius: 0 !important;
+        padding: 20px 32px !important;
+        color: #C0C0C0 !important;
+        font-size: 14px !important;
+        line-height: 22px !important;
+      }
+      [data-slot='settings.general.item'] [aria-pressed]:hover {
+        background: #000080 !important;
+        color: #FFFFFF !important;
+      }
+      [data-slot='settings.general.item'] [aria-pressed='true'] {
+        background: #FFFFFF !important;
+        border-color: #FFFFFF !important;
+        color: #0000AA !important;
+        box-shadow: inset -2px -2px 0 #808080, inset 2px 2px 0 #E8E8E8 !important;
+      }
+      [data-slot='settings.general.item'] [aria-pressed]:active {
+        box-shadow: none !important;
+      }
+      [data-slot='settings.general.item'] [aria-pressed] svg {
+        color: inherit !important;
+      }
+
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;
