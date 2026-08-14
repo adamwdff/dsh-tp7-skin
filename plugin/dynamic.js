@@ -283,6 +283,48 @@ return {
         color: inherit !important;
       }
 
+      /* ============ Settings Agent presets: roster cards ============ */
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) {
+        background: #000080 !important;
+        border: 1px solid #808080 !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) button {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        border-radius: 0 !important;
+        color: #FFFFFF !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) button:hover {
+        background: #0000AA !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) button:disabled {
+        color: #9090E0 !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) span {
+        color: #C0C0C0 !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed]) code {
+        color: #00AAAA !important;
+        font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) {
+        background: #FFFFFF !important;
+        border-color: #FFFFFF !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) button {
+        color: #0000AA !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) button:disabled {
+        color: #0000AA !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) span {
+        color: #0000AA !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) code {
+        color: #0000AA !important;
+      }
+
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;
