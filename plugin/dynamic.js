@@ -169,15 +169,6 @@ return {
         background: #000080 !important;
       }
 
-      /* Brand wordmark HARNESS badge: keep the plate deep blue and its text
-         white so the wordmark reads correctly on the dark sidebar. */
-      [data-slot='sidebar'] svg[viewBox='0 0 182 24'] rect[width='52'] {
-        fill: #000080 !important;
-      }
-      [data-slot='sidebar'] svg[viewBox='0 0 182 24'] rect[width='52'] + g path {
-        fill: #FFFFFF !important;
-      }
-
       /* ============ Sidebar workspace header: secondary icon buttons ============ */
       [data-slot='sidebar.workspaces'] > div > div:first-child button {
         background: transparent !important;
