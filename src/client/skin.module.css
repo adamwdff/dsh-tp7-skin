@@ -392,6 +392,17 @@
   color: #0000AA !important;
 }
 
+/* ============ Settings dialogs: white TP frame on deep blue ============ */
+/* The Settings modal panel (role=dialog) would otherwise blend into the
+   deep-blue desktop; frame it with the classic TP7.0 white rectangle border
+   and keep its deep-blue fill so the page reads as a distinct dialog. */
+:global([role='dialog']) {
+  border: 2px solid #FFFFFF !important;
+  border-radius: 0 !important;
+  background: #000080 !important;
+  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
+}
+
 /* ============ TP7.0 status bar (own component, plain class names) ============ */
 :global(.tp7-statusbar) {
   display: flex;

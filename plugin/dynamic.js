@@ -340,6 +340,14 @@ return {
         color: #0000AA !important;
       }
 
+      /* ============ Settings dialogs: white TP frame on deep blue ============ */
+      [role='dialog'] {
+        border: 2px solid #FFFFFF !important;
+        border-radius: 0 !important;
+        background: #000080 !important;
+        box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
+      }
+
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;
