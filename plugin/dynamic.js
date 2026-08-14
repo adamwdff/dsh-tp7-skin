@@ -344,6 +344,14 @@ return {
         box-shadow: none !important;
         color: #0000AA !important;
       }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) button:active {
+        background: #FFFFFF !important;
+        box-shadow: none !important;
+        color: #0000AA !important;
+      }
+      [data-slot='settings.section'] li:has(> button[aria-pressed='true']) {
+        transition: none !important;
+      }
 
       /* ============ Settings dialogs: white TP frame on deep blue ============ */
       [role='dialog'] {

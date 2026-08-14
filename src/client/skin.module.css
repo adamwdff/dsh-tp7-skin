@@ -402,6 +402,20 @@
   color: #0000AA !important;
 }
 
+/* Clicking a preset to make it the default flashes the global button :active
+   inset shadow (a dark rectangle) before the card turns disabled, and the
+   card's background transition shows an interim dark fill while it switches
+   to white. Suppress both so the switch is instant and clean. */
+:global([data-slot='settings.section'] li:has(> button[aria-pressed='true']) button:active) {
+  background: #FFFFFF !important;
+  box-shadow: none !important;
+  color: #0000AA !important;
+}
+
+:global([data-slot='settings.section'] li:has(> button[aria-pressed='true'])) {
+  transition: none !important;
+}
+
 /* ============ Settings dialogs: white TP frame on deep blue ============ */
 /* The Settings modal panel (role=dialog) would otherwise blend into the
    deep-blue desktop; frame it with the classic TP7.0 white rectangle border
