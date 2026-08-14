@@ -361,6 +361,17 @@ return {
         box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
       }
 
+      /* ============ Trajectory: readable text colors ============ */
+      [data-conversation-composer-overlay] {
+        --dsw-alias-label-secondary: #55FFFF;
+      }
+      [data-conversation-composer-overlay] [data-timeline-span] {
+        background: #00AAAA !important;
+      }
+      [data-conversation-composer-overlay] [data-timeline-span='context'] {
+        background: color-mix(in srgb, #55FF55 68%, #00AAAA) !important;
+      }
+
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;
