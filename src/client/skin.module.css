@@ -392,48 +392,6 @@
   color: #0000AA !important;
 }
 
-/* ============ TP7.0 panel frames: white rectangle border ============ */
-/* Classic TP7.0 dialogs and menus frame their content with a crisp white
-   rectangle on the deep-blue/black surface. Apply the same treatment to the
-   modern equivalents: dropdown menus, modal dialogs, the composer card, user
-   message bubbles, and markdown code blocks. A 2px outer white ring via
-   box-shadow (layout-neutral) over the dark fills reads as the TP window
-   border without disturbing the existing DOS bevels on buttons. */
-:global([role='menu']) {
-  border: 2px solid #FFFFFF !important;
-  border-radius: 0 !important;
-  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-}
-
-:global([role='dialog']) {
-  border: 2px solid #FFFFFF !important;
-  border-radius: 0 !important;
-  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-}
-
-/* Composer card: white TP frame around the input surface. */
-:global([data-composer-card]) {
-  border: 2px solid #FFFFFF !important;
-  border-radius: 0 !important;
-  box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-}
-
-/* User message block: the bubble column framed as a TP window. Scoped to the
-   chat node seat so only conversation bubbles pick up the frame, not every
-   data-time-hover-root container (turn tails etc.). */
-:global([data-slot='conversation.chat.node'] [data-time-hover-root]) {
-  border: 1px solid #FFFFFF !important;
-  border-radius: 0 !important;
-  box-shadow: inset -1px -1px 0 #404040, inset 1px 1px 0 #E8E8E8 !important;
-}
-
-/* Markdown code blocks: white frame on the black code surface. */
-:global([data-slot='conversation.chat.node'] pre) {
-  border: 1px solid #FFFFFF !important;
-  border-radius: 0 !important;
-  box-shadow: inset -1px -1px 0 #404040, inset 1px 1px 0 #E8E8E8 !important;
-}
-
 /* ============ TP7.0 status bar (own component, plain class names) ============ */
 :global(.tp7-statusbar) {
   display: flex;

@@ -345,33 +345,6 @@ return {
         color: #0000AA !important;
       }
 
-      /* ============ TP7.0 panel frames: white rectangle border ============ */
-      [role='menu'] {
-        border: 2px solid #FFFFFF !important;
-        border-radius: 0 !important;
-        box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-      }
-      [role='dialog'] {
-        border: 2px solid #FFFFFF !important;
-        border-radius: 0 !important;
-        box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-      }
-      [data-composer-card] {
-        border: 2px solid #FFFFFF !important;
-        border-radius: 0 !important;
-        box-shadow: inset -2px -2px 0 #404040, inset 2px 2px 0 #E8E8E8 !important;
-      }
-      [data-slot='conversation.chat.node'] [data-time-hover-root] {
-        border: 1px solid #FFFFFF !important;
-        border-radius: 0 !important;
-        box-shadow: inset -1px -1px 0 #404040, inset 1px 1px 0 #E8E8E8 !important;
-      }
-      [data-slot='conversation.chat.node'] pre {
-        border: 1px solid #FFFFFF !important;
-        border-radius: 0 !important;
-        box-shadow: inset -1px -1px 0 #404040, inset 1px 1px 0 #E8E8E8 !important;
-      }
-
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;
