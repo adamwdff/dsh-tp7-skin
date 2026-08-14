@@ -202,6 +202,59 @@ return {
         color: #FFFFFF !important;
       }
 
+      /* ============ Settings plugins area: tabs (Plugin list / Plugin configuration) ============ */
+      [data-slot='settings.section'] [role='tablist'] {
+        gap: 4px !important;
+        margin-top: 0 !important;
+        padding-left: 8px !important;
+      }
+      [data-slot='settings.section'] [role='tab'] {
+        box-shadow: none !important;
+        background: transparent !important;
+        border: none !important;
+        padding: 4px 14px !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 20px !important;
+        color: #FFFFFF !important;
+        cursor: pointer;
+      }
+      [data-slot='settings.section'] [role='tab']:hover:not([aria-selected='true']) {
+        background: #000080 !important;
+      }
+      [data-slot='settings.section'] [role='tab'][aria-selected='true'] {
+        background: #FFFFFF !important;
+        color: #0000AA !important;
+        box-shadow: none !important;
+      }
+      [data-slot='settings.section'] [role='tab']:active {
+        box-shadow: none !important;
+      }
+      [data-slot='settings.section'] [role='tab']::after {
+        display: none !important;
+      }
+
+      /* Plugin list (inventory) cards: deep-blue card, transparent header, white title */
+      [data-slot='settings.section'] li[data-plugin-entry] {
+        background: #000080 !important;
+        border-color: #808080 !important;
+      }
+      [data-slot='settings.section'] li[data-plugin-entry] > button {
+        background: transparent !important;
+        box-shadow: none !important;
+        border: none !important;
+        color: #FFFFFF !important;
+      }
+      [data-slot='settings.section'] li[data-plugin-entry] > button:hover {
+        background: #0000AA !important;
+      }
+      [data-slot='settings.section'] li[data-plugin-entry] > button strong {
+        color: #FFFFFF !important;
+      }
+      [data-slot='settings.section'] li[data-plugin-entry] > button span {
+        color: #C0C0C0 !important;
+      }
+
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
         display: flex;

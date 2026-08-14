@@ -219,6 +219,72 @@
   color: #FFFFFF !important;
 }
 
+/* ============ Settings plugins area: tabs (Plugin list / Plugin configuration) ============ */
+/* Same TP7.0 menu-style highlight as the chat/trajectory tabs: selected tab
+   inverts to white bg + deep-blue text, unselected transparent white, hover
+   deep blue. Covers the settings.section tablist (and any nested tablist). */
+:global([data-slot='settings.section'] [role='tablist']) {
+  gap: 4px !important;
+  margin-top: 0 !important;
+  padding-left: 8px !important;
+}
+
+:global([data-slot='settings.section'] [role='tab']) {
+  box-shadow: none !important;
+  background: transparent !important;
+  border: none !important;
+  padding: 4px 14px !important;
+  font-size: 14px !important;
+  font-weight: 400 !important;
+  line-height: 20px !important;
+  color: #FFFFFF !important;
+  cursor: pointer;
+}
+
+:global([data-slot='settings.section'] [role='tab']:hover:not([aria-selected='true'])) {
+  background: #000080 !important;
+}
+
+:global([data-slot='settings.section'] [role='tab'][aria-selected='true']) {
+  background: #FFFFFF !important;
+  color: #0000AA !important;
+  box-shadow: none !important;
+}
+
+:global([data-slot='settings.section'] [role='tab']:active) {
+  box-shadow: none !important;
+}
+
+:global([data-slot='settings.section'] [role='tab']::after) {
+  display: none !important;
+}
+
+/* Plugin list (inventory) cards: deep-blue card, transparent header button,
+   white title — readable like the plugin-config cards above. */
+:global([data-slot='settings.section'] li[data-plugin-entry]) {
+  background: #000080 !important;
+  border-color: #808080 !important;
+}
+
+:global([data-slot='settings.section'] li[data-plugin-entry] > button) {
+  background: transparent !important;
+  box-shadow: none !important;
+  border: none !important;
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='settings.section'] li[data-plugin-entry] > button:hover) {
+  background: #0000AA !important;
+}
+
+:global([data-slot='settings.section'] li[data-plugin-entry] > button strong) {
+  color: #FFFFFF !important;
+}
+
+:global([data-slot='settings.section'] li[data-plugin-entry] > button span) {
+  color: #C0C0C0 !important;
+}
+
 /* ============ TP7.0 status bar (own component, plain class names) ============ */
 :global(.tp7-statusbar) {
   display: flex;
