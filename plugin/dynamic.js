@@ -30,6 +30,10 @@ return {
         '--dsw-alias-state-success-primary': { light: '#55FF55', dark: '#55FF55' },
         '--dsw-alias-state-warn-primary': { light: '#FFFF55', dark: '#FFFF55' },
         '--dsw-specific-sidebar-fill': { light: '#000080', dark: '#000080' },
+        '--dsw-specific-input-major': { light: '#0000AA', dark: '#0000AA' },
+        '--dsw-alias-markdown-code-block': { light: '#0000AA', dark: '#0000AA' },
+        '--dsw-alias-markdown-code-block-banner': { light: '#000080', dark: '#000080' },
+        '--dsw-alias-markdown-inline-code': { light: '#0000AA', dark: '#0000AA' },
       }
       ctx.effect(() => theme.overrideTokens('pascal-tp7-skin', tokens))
     }

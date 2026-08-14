@@ -18,7 +18,7 @@ import './skin.module.css'
 const TP7_TOKENS: ThemeTokenOverrides = {
   '--dsw-alias-bg-base': { light: '#0000AA', dark: '#0000AA' },
   '--dsw-alias-bg-layer-1': { light: '#000080', dark: '#000080' },
-  '--dsw-alias-bg-layer-2': { light: '#000000', dark: '#000000' },
+  '--dsw-alias-bg-layer-2': { light: '#000080', dark: '#000080' },
   '--dsw-alias-bg-overlay': { light: '#000080', dark: '#000080' },
   '--dsw-alias-border-l1': { light: '#AAAAAA', dark: '#AAAAAA' },
   '--dsw-alias-border-l2': { light: '#C0C0C0', dark: '#C0C0C0' },
@@ -29,6 +29,13 @@ const TP7_TOKENS: ThemeTokenOverrides = {
   '--dsw-alias-state-success-primary': { light: '#55FF55', dark: '#55FF55' },
   '--dsw-alias-state-warn-primary': { light: '#FFFF55', dark: '#FFFF55' },
   '--dsw-specific-sidebar-fill': { light: '#000080', dark: '#000080' },
+  // Surfaces that must read as the desktop itself, not white blocks: the
+  // composer card around the input and the markdown code / inline-code
+  // surfaces behind English text all match the deep-blue base.
+  '--dsw-specific-input-major': { light: '#0000AA', dark: '#0000AA' },
+  '--dsw-alias-markdown-code-block': { light: '#0000AA', dark: '#0000AA' },
+  '--dsw-alias-markdown-code-block-banner': { light: '#000080', dark: '#000080' },
+  '--dsw-alias-markdown-inline-code': { light: '#0000AA', dark: '#0000AA' },
 }
 
 /**
