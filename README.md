@@ -1,5 +1,7 @@
 # 🐬 Turbo Pascal 7.0 蓝屏皮肤（DSH Web GUI）
 
+[English](README.en.md) | 简体中文
+
 将 [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web 界面复刻为 **Turbo Pascal 7.0 IDE（1992）** 的经典蓝屏风格：深蓝桌面、条纹菜单栏、菜单式高亮、DOS 3D 斜面控件、块状光标和 TP 底部状态栏。
 
 ![skin-preview](docs/preview.png)
