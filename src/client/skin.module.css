@@ -432,19 +432,9 @@
    headers, the earlier-history label, and the top "current mode" chip. On
    the deep-blue background that cyan is too close to the surface to read.
    Brighten the text by redefining the variable inside the trajectory view
-   (its root carries the unique data-conversation-composer-overlay marker),
-   while pinning the timeline span fills back to their original cyan so only
-   font colors change, never backgrounds. */
+   (its root carries the unique data-conversation-composer-overlay marker). */
 :global([data-conversation-composer-overlay]) {
   --dsw-alias-label-secondary: #55FFFF;
-}
-
-:global([data-conversation-composer-overlay] [data-timeline-span]) {
-  background: #00AAAA !important;
-}
-
-:global([data-conversation-composer-overlay] [data-timeline-span='context']) {
-  background: color-mix(in srgb, #55FF55 68%, #00AAAA) !important;
 }
 
 /* ============ TP7.0 status bar (own component, plain class names) ============ */

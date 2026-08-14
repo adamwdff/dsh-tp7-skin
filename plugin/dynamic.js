@@ -365,12 +365,6 @@ return {
       [data-conversation-composer-overlay] {
         --dsw-alias-label-secondary: #55FFFF;
       }
-      [data-conversation-composer-overlay] [data-timeline-span] {
-        background: #00AAAA !important;
-      }
-      [data-conversation-composer-overlay] [data-timeline-span='context'] {
-        background: color-mix(in srgb, #55FF55 68%, #00AAAA) !important;
-      }
 
       /* ============ TP7.0 status bar ============ */
       .tp7-statusbar {
