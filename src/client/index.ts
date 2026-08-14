@@ -29,26 +29,6 @@ const TP7_TOKENS: ThemeTokenOverrides = {
   '--dsw-alias-state-success-primary': { light: '#55FF55', dark: '#55FF55' },
   '--dsw-alias-state-warn-primary': { light: '#FFFF55', dark: '#FFFF55' },
   '--dsw-specific-sidebar-fill': { light: '#000080', dark: '#000080' },
-  // Derived surfaces the base palette leaves light; lock them to the dark
-  // TP7.0 scheme so input chrome and message bubbles stop reading as white
-  // blocks on the deep-blue desktop.
-  '--dsw-specific-input-major': { light: '#000000', dark: '#000000' },
-  '--dsw-specific-bubble': { light: '#000080', dark: '#000080' },
-  '--dsw-specific-bubble-highlight': { light: '#0000AA', dark: '#0000AA' },
-  // Text tiers: tertiary/caption/dimmed must stay readable on the dark
-  // surfaces instead of the pale light-theme grays.
-  '--dsw-alias-label-tertiary': { light: '#A0A0D0', dark: '#A0A0D0' },
-  '--dsw-alias-label-caption': { light: '#9090C0', dark: '#9090C0' },
-  '--dsw-alias-label-dimmed': { light: '#7070A0', dark: '#7070A0' },
-  // Inverted label is used for text knocked out on colored chips/plates;
-  // keep it near-white on the dark plate.
-  '--dsw-alias-label-primary-inverted': { light: '#FFFFFF', dark: '#FFFFFF' },
-  '--dsw-specific-menu': { light: '#000080', dark: '#000080' },
-  // Markdown code surfaces: keep the code blocks and inline code on dark
-  // backgrounds instead of the pale light-theme fills.
-  '--dsw-alias-markdown-code-block': { light: '#000000', dark: '#000000' },
-  '--dsw-alias-markdown-code-block-banner': { light: '#000080', dark: '#000080' },
-  '--dsw-alias-markdown-inline-code': { light: '#000000', dark: '#000000' },
 }
 
 /**
