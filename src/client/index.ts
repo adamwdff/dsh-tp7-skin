@@ -36,6 +36,10 @@ const TP7_TOKENS: ThemeTokenOverrides = {
   '--dsw-alias-markdown-code-block': { light: '#0000AA', dark: '#0000AA' },
   '--dsw-alias-markdown-code-block-banner': { light: '#000080', dark: '#000080' },
   '--dsw-alias-markdown-inline-code': { light: '#0000AA', dark: '#0000AA' },
+  // Sent message bubble: a soft deep-blue so the bubble stands off the
+  // desktop without harsh white or pure black.
+  '--dsw-specific-bubble': { light: '#000080', dark: '#000080' },
+  '--dsw-specific-bubble-highlight': { light: '#0000AA', dark: '#0000AA' },
 }
 
 /**

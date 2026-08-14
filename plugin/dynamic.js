@@ -34,6 +34,8 @@ return {
         '--dsw-alias-markdown-code-block': { light: '#0000AA', dark: '#0000AA' },
         '--dsw-alias-markdown-code-block-banner': { light: '#000080', dark: '#000080' },
         '--dsw-alias-markdown-inline-code': { light: '#0000AA', dark: '#0000AA' },
+        '--dsw-specific-bubble': { light: '#000080', dark: '#000080' },
+        '--dsw-specific-bubble-highlight': { light: '#0000AA', dark: '#0000AA' },
       }
       ctx.effect(() => theme.overrideTokens('pascal-tp7-skin', tokens))
     }
